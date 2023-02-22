@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/home.css">
+    <title>Online Electronic Shopping Store - W Mart</title>
+</head>
+<body>
+    <header class="topmost">
+        <ul id="header_ul">
+            <li class="header_li">
+                <a href="/contactus" class="header_anchor" target="_blank">Find a store</a>
+            </li>
+            <li class="header_li">
+                <a href="/contactus" class="header_anchor" target="_blank">Contact us</a>
+            </li>
+        </ul>
+        <div id="header_section">
+            <div id="header_main">
+                <a href="/" target="_self">
+                    <img src="../striped-substance-4459-logo-magnified.png" alt="logo_img">
+                </a>
+            </div>
+            <div id="search_panel">
+                <form action="" class="search_form">
+                    <div id="search_form_container">
+                        <input type="text" id="search_products" placeholder="Find your favorite products">
+                        <button id="search_form_btn">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <div id="header_section_ul">
+                <ul>
+                    <li id="cart">
+                        <a href="./cart.html">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </a>
+                        <span class="cart_span">Cart</span>
+                    </li>
+                    <li id="account_dropdown">
+                        <span>
+                            <i class="fa-solid fa-user"></i>
+                        </span>
+                        <span id="user_name"></span>
+                        <div id="acc_dropdown">
+                            <a href="/profile/myprofile" target="_self" class="acc_dropdown_item" id="profile">My Profile</a>
+                            <a href="/profile/address" target="_self" class="acc_dropdown_item" id="address">My Address</a>
+                            <a href="/profile/wishlist" target="_self" class="acc_dropdown_item" id="wishlist">My Wishlist</a>
+                            <div id="acc_logout">Logout</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <nav>
+            <ul id="navbar_ul">
+                <li class="nav_container" id="nav_accessories">
+                    <div class="nav_title">Accessories</div>
+                    <div class="nav_categories">
+                        <div class="nav_cat">
+                            <ul class="nav_categories_items">
+                                <li class="nav_items">
+                                    <a class="nav_item" href="" target="">Bags, Cases &amp; Sleeves</a>
+                                </li>
+                            </ul>
+                            <ul class="nav_categories_items">
+                                <li class="nav_items">
+                                    <a class="nav_item" href="" target="">Smart Devices</a>
+                                </li>
+                                <li class="nav_items">
+                                    <a class="nav_sub_item" href="" target="">Smart Plugs</a>
+                                </li>
+                                <li class="nav_items">
+                                    <a class="nav_sub_item" href="" target="">Smart Cameras</a>
+                                </li>
+                                <li class="nav_items">
+                                    <a class="nav_sub_item" href="" target="">Smart Sensors</a>
+                                </li>
+                                <li class="nav_items">
+                                    <a class="nav_sub_item" href="" target="">Smart Lights</a>
+                                </li>
+                                <li class="nav_items">
+                                    <a class="nav_sub_item" href="" target="">Smart Speakers</a>
+                                </li>
+                                <li class="nav_items">
+                                    <a class="nav_sub_item" href="" target="">Smart Tracking Devices</a>
+                                </li>
+                            </ul>
+                            <ul class="nav_categories_items">
+                                <li class="nav_items">
+                                    <a class="nav_item" href="" target="">Batteries</a>
+                                </li>
+                            </ul>
+                            <ul class="nav_categories_items">
+                                <li class="nav_items">
+                                    <a class="nav_item" href="" target="">Power Banks</a>
+                                </li>
+                            </ul>
+                            <ul class="nav_categories_items">
+                                <li class="nav_items">
+                                    <a class="nav_item" href="" target="">Cables &amp; Cords</a>
+                                </li>
+                            </ul>
+                            <ul class="nav_categories_items">
+                                <li class="nav_items">
+                                    <a class="nav_item" href="" target="">Chargers &amp; Adapters</a>
+                                </li>
+                            </ul>
+                            <ul class="nav_categories_items">
+                                <li class="nav_items">
+                                    <a class="nav_item" href="" target=""> Bluetooth &amp; WiFi Speakers</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="nav_cat">
+                            <ul class="nav_categories_items">
+                                <li class="nav_items">
+                                    <a class="nav_item" href="" target="">Reconnect Disney | Marvel Accessories</a>
+                                </li>
+                            </ul>
+                            <ul class="nav_categories_items">
+                                <li class="nav_items_head">Data Storage Devices</li>
+                                <li class="nav_items">
+                                    <a class="nav_sub_item" href="" target="">Memory Cards</a>
+                                </li>
+                                <li class="nav_items">
+                                    <a class="nav_sub_item" href="" target="">Pen Drives &amp; OTG Drives</a>
+                                </li>
+                                <li class="nav_items">
+                                    <a class="nav_sub_item" href="" target="">Hard Disks &amp; SSD</a>
+                                </li>
+                            </ul>
+                            <ul class="nav_categories_items">
+                                <li class="nav_items_head">Mounts &amp; Stands</li>
+                                <li class="nav_items">
+                                    <a class="nav_sub_item" href="" target="">Air Conditioner Stands</a>
+                                </li>
+                                <li class="nav_items">
+                                    <a class="nav_sub_item" href="" target="">Tripods &amp; Monopods</a>
+                                </li>
+                                <li class="nav_items">
+                                    <a class="nav_sub_item" href="" target="">Selfie Sticks</a>
+                                </li>
+                                <li class="nav_items">
+                                    <a class="nav_sub_item" href="" target="">Car Mobile Holders</a>
+                                </li>
+                                <li class="nav_items">
+                                    <a class="nav_sub_item" href="" target="">Laptop Stands</a>
+                                </li>
+                                <li class="nav_items">
+                                    <a class="nav_sub_item" href="" target="">Mobile Grips &amp; Stands</a>
+                                </li>
+                            </ul>
+                            <ul class="nav_categories_items">
+                                <li class="nav_items">
+                                    <a class="nav_item" href="" target="">Surge Protectors</a>
+                                </li>
+                            </ul>
+                            <ul class="nav_categories_items">
+                                <li class="nav_items">
+                                    <a class="nav_item" href="" target="">Webcams</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="nav_cat">
+                            <ul class="nav_categories_items">
+                                <li class="nav_items">
+                                    <a class="nav_item" href="" target="">Headphones &amp; Headsets</a>
+                                </li>
+                            </ul>
+                            <ul class="nav_categories_items">
+                                <li class="nav_items">
+                                    <a class="nav_item" href="" target="">Cleaners &amp; Protectors</a>
+                                </li>
+                            </ul>
+                            <ul class="nav_categories_items">
+                                <li class="nav_items">
+                                    <a class="nav_item" href="" target="">Computer Mouse</a>
+                                </li>
+                            </ul>
+                            <ul class="nav_categories_items">
+                                <li class="nav_items">
+                                    <a class="nav_item" href="" target="">Keyboards</a>
+                                </li>
+                            </ul>
+                            <ul class="nav_categories_items">
+                                <li class="nav_items">
+                                    <a class="nav_item" href="" target="">Indoor Lighting</a>
+                                </li>
+                            </ul>
+                            <ul class="nav_categories_items">
+                                <li class="nav_items_head">Office Electronics</li>
+                                <li class="nav_items">
+                                    <a class="nav_sub_item" href="" target="">Laminators</a>
+                                </li>
+                                <li class="nav_items">
+                                    <a class="nav_sub_item" href="" target="">Paper Shredders</a>
+                                </li>
+                            </ul>
+                            <ul class="nav_categories_items">
+                                <li class="nav_items">
+                                    <a class="nav_item" href="" target="">Tyre Inflators</a>
+                                </li>
+                            </ul>
+                            <ul class="nav_categories_items">
+                                <li class="nav_items">
+                                    <a class="nav_item" href="" target="">Routers</a>
+                                </li>
+                            </ul>
+                            <ul class="nav_categories_items">
+                                <li class="nav_items">
+                                    <a class="nav_item" href="" target="">Screen Guards &amp; Protectors</a>
+                                </li>
+                            </ul>
+                            <ul class="nav_categories_items">
+                                <li class="nav_items">
+                                    <a class="nav_item" href="" target="">Power Strips &amp; Extension Cords</a>
+                                </li>
+                            </ul>
+                            <ul class="nav_categories_items">
+                                <li class="nav_items">
+                                    <a class="nav_item" href="" target="">Stabilizers</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav_container" id="nav_mobile_tablets">
+                    <div class="nav_title">Mobiles & Tablets</div>
+                    <div class="nav_categories">
+                        <div class="nav_cat">
+                            <ul class="nav_categories_items">
+                                <li class="nav_items">
+                                    <a class="nav_item" href="" target="">Smartphones</a>
+                                </li>
+                            </ul>
+                            <ul class="nav_categories_items">
+                                <li class="nav_items">
+                                    <a class="nav_item" href="" target="">Smartwatches</a>
+                                </li>
+                            </ul>
+                            <ul class="nav_categories_items">
+                                <li class="nav_items_head">Accessories</li>
+                                <li class="nav_items">
+                                    <a class="nav_sub_item" href="" target="">Tablet Accessories</a>
+                                </li>
+                                <li class="nav_items">
+                                    <a class="nav_sub_item" href="" target="">Mobile Accessories</a>
+                                </li>
+                                <li class="nav_items">
+                                    <a class="nav_sub_item" href="" target="">Mobile Grips &amp; Stands</a>
+                                </li>
+                                <li class="nav_items">
+                                    <a class="nav_sub_item" href="" target="">Car Mobile Holders</a>
+                                </li>
+                                <li class="nav_items">
+                                    <a class="nav_sub_item" href="" target="">Memory Cards</a>
+                                </li>
+                                <li class="nav_items">
+                                    <a class="nav_sub_item" href="" target="">Cables &amp; Cords</a>
+                                </li>
+                                <li class="nav_items">
+                                    <a class="nav_sub_item" href="" target="">Chargers &amp; Adapters</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="nav_cat">
+                            <ul class="nav_categories_items">
+                                <li class="nav_items">
+                                    <a class="nav_item" href="" target="">Headphones &amp; Headsets</a>
+                                </li>
+                            </ul>
+                            <ul class="nav_categories_items">
+                                <li class="nav_items">
+                                    <a class="nav_item" href="" target="">Tablets &amp; eReaders</a>
+                                </li>
+                                <li class="nav_items">
+                                    <a class="nav_item" href="" target="">Every Day use Tablets below 15000</a>
+                                </li>
+                                <li class="nav_items">
+                                    <a  class="nav_item" href="" target="">Premium Tablets, Above 15001</a>
+                                </li>
+                            </ul>
+                            <ul class="nav_categories_items">
+                                <li class="nav_items">
+                                    <a class="nav_item" href="" target="">Power Banks</a>
+                                </li>
+                            </ul>
+                            <ul class="nav_categories_items">
+                                <li class="nav_items">
+                                    <a class="nav_item" href="" target="">eSlates</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="nav_cat">
+                            <ul class="nav_categories_items">
+                                <li class="nav_items">
+                                    <a class="nav_item" href="" target="">AI Learning Robots</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav_container" id="nav_televisions">
+                    <div class="nav_title">Televisions</div>
+                    <div class="nav_categories">
+                        <div class="nav_cat">
+                            <ul class="nav_categories_items">
+                                <li class="nav_items_head">
+                                    <a class="nav_item" href="" target="">Televisions</a>
+                                </li>
+                                <li class="nav_items">
+                                    <a class="nav_sub_item" href="" target="">Smart TVs</a>
+                                </li>
+                                <li class="nav_items">
+                                    <a class="nav_sub_item" href="" target="">32 Inch TVs</a>
+                                </li>
+                                <li class="nav_items">
+                                    <a class="nav_sub_item" href="" target="">43 Inch TVs</a>
+                                </li>
+                                <li class="nav_items">
+                                    <a class="nav_sub_item" href="" target="">55 Inch TVs</a>
+                                </li>
+                                <li class="nav_items">
+                                    <a class="nav_sub_item" href="" target="">Android TVs</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="nav_cat">
+                            <ul class="nav_categories_items">
+                                <li class="nav_items_head">Gaming</li>
+                                <li class="nav_items">
+                                    <a class="nav_sub_item" href="" target="">Gaming Consoles</a>
+                                </li>
+                                <li class="nav_items">
+                                    <a class="nav_sub_item" href="" target="">Gaming Accessories</a>
+                                </li>
+                                <li class="nav_items">
+                                    <a class="nav_sub_item" href="" target="">Gaming Titles</a>
+                                </li>
+                            </ul>
+                            <ul class="nav_categories_items">
+                                <li class="nav_items">
+                                    <a class="nav_item" href="" target="">Projectors</a>
+                                </li>
+                            </ul>
+                            <ul class="nav_categories_items">
+                                <li class="nav_items">
+                                    <a class="nav_item" href="" target="">Streaming Devices</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="nav_cat">
+                            <ul class="nav_categories_items">
+                                <li class="nav_items">
+                                    <a class="nav_item" href="" target="">Reconnect Disney | Marvel Audio Collection</a>
+                                </li>
+                            </ul>
+                            <ul class="nav_categories_items">
+                                <li class="nav_items_head">TV &amp; Audio Accessories</li>
+                                <li class="nav_items">
+                                    <a class="nav_sub_item" href="" target="">Virtual Reality Headsets</a>
+                                </li>
+                                <li class="nav_items">
+                                    <a class="nav_sub_item" href="" target="">Stabilizers &amp; Surge Protectors</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav_container" id="nav_audio">
+                    <div class="nav_title">Audio</div>
+                    <div class="nav_categories"></div>
+                </li>
+                <li class="nav_container" id="nav_home_appliances">
+                    <div class="nav_title">Home Appliances</div>
+                    <div class="nav_categories"></div>
+                </li>
+                <li class="nav_container" id="nav_computers">
+                    <div class="nav_title">Computers</div>
+                    <div class="nav_categories"></div>
+                </li>
+                <li class="nav_container" id="nav_cameras">
+                    <div class="nav_title">Cameras</div>
+                    <div class="nav_categories"></div>
+                </li>
+                <li class="nav_container" id="nav_kitchen_appliances">
+                    <div class="nav_title">Kitchen Appliances</div>
+                    <div class="nav_categories"></div>
+                </li>
+                <li class="nav_container" id="nav_personal_care">
+                    <div class="nav_title">Personal Care</div>
+                    <div class="nav_categories"></div>
+                </li>
+                
+            </ul>
+        </nav>
+    </header>
+    <main id="home">
+        <section class="scroll-horizontal" id="slide-section1">
+            <div class="image-container">
+                <div id="image-loop-container">
+                    <img src="" alt="" class="scroll-img">
+                </div>
+            </div>
+        </section>
+        <section class="scroll-horizontal" id="slide-section2">
+            <p>Great Deal on Electronics</p>
+            <div class="hover-effect">
+                <div id="hover-images">
+                    <img src="https://www.reliancedigital.in/medias/Motorola-Moto-G42-Small-Banner-28-12-2022.jpg?context=bWFzdGVyfGltYWdlc3wyOTkyNXxpbWFnZS9qcGVnfGltYWdlcy9oZWUvaGNmLzk5NTg4MjY2MzkzOTAuanBnfDU2YTBjMmZhZmYzODEzMjBhNGM0ZWFhODNjZjEyNzMyNDQyZTZiYTc2ZDZkNGMzNmY5MmNkN2Q4OTRjZDRmMjI" alt="" class="hover-img" id="hover-img-1">
+                </div>
+                <div id="hover-images">
+                    <img src="https://www.reliancedigital.in/medias/OnePlus-TVs-12999-Small-Banner-03-02-2023.jpg?context=bWFzdGVyfGltYWdlc3wzODc4N3xpbWFnZS9qcGVnfGltYWdlcy9oNGIvaDc1Lzk5NTc2NTM3NzQzNjYuanBnfDQ3ZmNhYWNjYjQ4ZjUxMjkzYjJmNzM2YjNhYjYxMWQxNjExNzMzMWI1ZjQ0ZTYzMGNmMDhiNDljMWIzNmFhZDg" alt="" class="hover-img" id="hover-img-2">
+                </div>
+                <div id="hover-images">
+                    <img src="https://www.reliancedigital.in/medias/Smartwatches-Small-Banner-28-12-2022.jpg?context=bWFzdGVyfGltYWdlc3wzMTY3M3xpbWFnZS9qcGVnfGltYWdlcy9oNTEvaGY3Lzk5Mzc4OTUyOTI5NTguanBnfDQ2NzM2YjAxZTkzYmJiMTNlMjk4ODkxNTNlMTczMDcxYzU4NjMzZDZmNWQ3N2I5MGViNmMzZDAwNjExMmUxNTE" alt="" class="hover-img" id="hover-img-3">
+                </div>
+                <div id="hover-images">
+                    <img src="https://www.reliancedigital.in/medias/Neckband-True-Wireless-Small-Banner-28-12-2022.jpg?context=bWFzdGVyfGltYWdlc3wzMjg5OHxpbWFnZS9qcGVnfGltYWdlcy9oNzYvaDE2Lzk5Mzc4OTUwOTYzNTAuanBnfGE1OTcxMTM4NGUyMjU3MmM4NTc4YTI1NThkMmQwOTc1ZDU2N2YwNjRjMWNiZTU2YjZiMzcwOTVkYjc0MzQ4MDc" alt="" class="hover-img" id="hover-img-4">
+                </div>
+            </div>
+        </section>
+        <section class="scroll-horizontal" id="slide-section3">
+            <p id="promise-heading">THE RELIANCE DIGITAL BRAND PROMISE</p>
+            <div class="promise-container">
+                <div class="promise-card">
+                    <img src="https://www.reliancedigital.in/medias/Insta-Delivery-Brand-Promise-Icon.png?context=bWFzdGVyfGltYWdlc3wxNTM3fGltYWdlL3BuZ3xpbWFnZXMvaGI2L2gwNS85NDQ3MTcwMzQyOTQyLnBuZ3w2Yzc1ZmY1ZjYwOWIyNWU0ZTgwMjFlYmRkMTU5ZTgzMGI4ZDNmZTE2NjVjYmRlMmUwMmRiODI2OTExNWM5ZTdk" alt="" class="promise-img">
+                    <h3 class="promise-text">SERVICE GUARANTEE</h3>
+                </div>
+                <div class="promise-card">
+                    <img src="https://www.reliancedigital.in/medias/Best-Finance-Options-2.png?context=bWFzdGVyfGltYWdlc3wxMjM4fGltYWdlL3BuZ3xpbWFnZXMvaDJmL2gxOS85NDQ3MTcwNDA4NDc4LnBuZ3xlMDBiNjY4YWI5YzMzYjZkZDhlZTMyMDhjYjE2YzI2OTY2NWJhYjk2M2VkNzdjZDg3NTNlMGEyMTA1ZjFlODZh" alt="" class="promise-img">
+                    <h3 class="promise-text">BEST FINANCE OPTION</h3>
+                </div>
+                <div class="promise-card">
+                    <img src="https://www.reliancedigital.in/medias/unmatched-network-img.png?context=bWFzdGVyfGltYWdlc3w3NDV8aW1hZ2UvcG5nfGltYWdlcy9oODIvaDJhLzkwOTA3OTgwNTk1NTAucG5nfDFmMThjYzdiYTNiOTgxYjA5YzdlZTFiMmQyODI5MGY2NTM4ZTcxOWZkZTA1ZjAzY2Q1ZTk5YjQ1NTMxMWViYzU" alt="" class="promise-img">
+                    <h3 class="promise-text">UNMATCHED NETWORK</h3>
+                </div>
+            </div>
+        </section>
+        <section class="scroll-horizontal" id="slide-section4">
+            <div class="image-container">
+                <div id="image-loop-container">
+                    <img src="" alt="" class="scroll-img">
+                </div>
+            </div>
+        </section>
+        <section class="explore-section" id="slide-section5">
+            <p class="explore_head">EXPLORE OUR RANGE OF PRODUCTS</p>
+            <div class="products_slide">
+                <button id="prev"><</button>
+                <div class="explore_products">
+                    <div class="exp_product_card">
+                        <a href="./products/phones.html" class="product_link" id="smartphones">
+                            <img src="https://www.reliancedigital.in/medias/iphone-pro-11-01.png?context=bWFzdGVyfGltYWdlc3wyOTc3NnxpbWFnZS9wbmd8aW1hZ2VzL2gxNi9oNWUvOTI3NjA1OTkxMDE3NC5wbmd8MzdkYzljODgzMDcyM2ZjMjJmZDI2ZjMwNjhkZmU5YjFmOTJmMGRmOTFiYzc4ZjcyMDRhMjQ5MWMyNjYwOTgxYg" alt="">
+                        </a>
+                        <p class="exp_product_name">Smartphones</p>
+                    </div>
+                    <div class="exp_product_card">
+                        <a href="./products/phones.html" class="product_link" id="washing-machines">
+                            <img src="https://www.reliancedigital.in/medias/Washing-Machine-180x180-15-01-2019.png?context=bWFzdGVyfGltYWdlc3wzNDU4MXxpbWFnZS9wbmd8aW1hZ2VzL2gzOC9oM2UvOTI1MTA1MDg4MTA1NC5wbmd8ZDAyZGNkMzU1MzE3N2E2OGFlOTliMzUyODZkYzlkNTc0NzFmODllY2JiZDVlNzdhYjg3MTgyMTc4ZGVhODA3ZA" alt="">
+                        </a>
+                        <p class="exp_product_name"> Washing machines</p>
+                    </div>
+                    <div class="exp_product_card">
+                        <a href="./products/phones.html" class="product_link" id="laptops">
+                            <img src="https://www.reliancedigital.in/medias/Laptop-180x180-15-01-2019.png?context=bWFzdGVyfGltYWdlc3wyOTAwOXxpbWFnZS9wbmd8aW1hZ2VzL2g0Mi9oNTYvOTI1MTA1MDYxODkxMC5wbmd8N2ZjYTg0ZDAyOTZmMmQ5OTZhZDNiM2M4NDg0ZDgxY2UyNzNjMmJiYzMwZTZiOGQwOWE5N2JlZDI4M2ViMGZjNw" alt="">
+                        </a>
+                        <p class="exp_product_name">Laptops</p>
+                    </div>
+                    <div class="exp_product_card">
+                        <a href="./products/phones.html" class="product_link" id="televisions">
+                            <img src="https://www.reliancedigital.in/medias/TV-180x180-15-01-2019.png?context=bWFzdGVyfGltYWdlc3w0OTM4M3xpbWFnZS9wbmd8aW1hZ2VzL2g1ZC9oMTEvOTI1MTA1MDU1MzM3NC5wbmd8MThiNmU4NTZiNWI5MTE1ZGVjYjA4ZjIwM2QwZjUyMzFlOGExZTY0YmQ0MTRkYTkyN2M2MDZiYzUzZDY1ZjM4Ng" alt="">
+                        </a>
+                        <p class="exp_product_name">Televisions</p>
+                    </div>
+                    <div class="exp_product_card">
+                        <a href="./products/phones.html" class="product_link" id="refrigerators">
+                            <img src="https://www.reliancedigital.in/medias/Watch-180x180-27-02-2020.png?context=bWFzdGVyfGltYWdlc3w2Njk2fGltYWdlL3BuZ3xpbWFnZXMvaGQ1L2g2My85MjUzNTA3NTk2MzE4LnBuZ3w4NmEwODU5NDI5YzVlMzJjNzRlNzNlYmJkMmJmYTZjMTI2OWY0YTUxYWU3YzMzM2E3YTc5YjljZmU4ZGMyNGQ2" alt="">
+                        </a>
+                        <p class="exp_product_name">Refrigerators</p>
+                    </div>
+                    <div class="exp_product_card">
+                        <a href="./products/phones.html" class="product_link" id="speakers-headsets">
+                            <img src="https://www.reliancedigital.in/medias/Speaker-Headset-180x180-15-01-2019.png?context=bWFzdGVyfGltYWdlc3wyNzUzN3xpbWFnZS9wbmd8aW1hZ2VzL2g1YS9oODAvOTI1MTA1MDY4NDQ0Ni5wbmd8YmMyYWJiNzRhMzk4NjMxMDRmOWRlZGI1MzVjZDk2Y2IxYTkxOGNlNjlmZjA2YTgwMGIwMjhmYTJlYmNhYjIwOA" alt="">
+                        </a>
+                        <p class="exp_product_name">Speakers and Headsets</p>
+                    </div>
+                    <div class="exp_product_card">
+                        <a href="./products/phones.html" class="product_link" id="cameras">
+                            <img src="https://www.reliancedigital.in/medias/Camera-180x180-15-01-2019.png?context=bWFzdGVyfGltYWdlc3w0MzE0OHxpbWFnZS9wbmd8aW1hZ2VzL2gzNi9oMGMvOTI1MTA1MDc0OTk4Mi5wbmd8NDMxMGMyNjg2M2I3ZDFhOTc4YjkzMTNhYWM1ZmU5YzRlMjc3Mzg4MDcxOTU1OGE0NzZjODczZWU3NTdhMTM0MA" alt="">
+                        </a>
+                        <p class="exp_product_name">Cameras</p>
+                    </div>
+                </div>
+                <button id="next">></button>   
+            </div>  
+            </div>
+            <button class="explore-btn">View All</button>
+        </section>
+    </main>
+    <footer id="footer">
+        <div class="footer_links">
+            <div class="footer_links_sub">
+                <ul class="links">
+                    <li class="link_head">PRODUCT CATEGORIES</li>
+                    <li class="link_sub">Smartphones</li>
+                    <li class="link_sub">Laptops</li>
+                    <li class="link_sub">DSLR Camera</li>
+                    <li class="link_sub">Televisions</li>
+                    <li class="link_sub">Air Conditioners</li>
+                    <li class="link_sub">Refrigerators</li>
+                    <li class="link_sub">Kitchen Appliances</li>
+                    <li class="link_sub">Accessories</li>
+                    <li class="link_sub">Personal Care and Grooming</li>
+                </ul>
+            </div>
+            <div class="footer_links_sub">
+                <ul class="links">
+                    <li class="link_head">SITE INFO</li>
+                    <li class="link_sub">About W Mart</li>
+                    <li class="link_sub">Services</li>
+                    <li class="link_sub">Site Map</li>
+                    <li class="link_sub">Corporate Enquiries</li>
+                    <li class="link_sub">Contact Us</li>
+                </ul>
+            </div>
+            <div class="footer_links_sub">
+                <ul class="links">
+                    <li class="link_head">RESOURCE CENTRE</li>
+                    <li class="link_sub">Product Reviews</li>
+                    <li class="link_sub">Buying Guides</li>
+                    <li class="link_sub">How Tos</li>
+                    <li class="link_sub">Featured Stories</li>
+                    <li class="link_sub">Events</li>
+                    <li class="link_sub">Nearest Stores</li>
+                </ul>
+            </div>
+            <div class="footer_links_sub">
+                <ul class="links">
+                    <li class="link_head">POLICIES</li>
+                    <li class="link_sub">Terms of Use</li>
+                    <li class="link_sub">FAQs</li>
+                    <li class="link_sub">Cancellation and Return Policy</li>
+                    <li class="link_sub">Shipping and Delivery Policy</li>
+                    <li class="link_sub">Privacy Policy</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer_social">
+            <p>FOLLOW US</p>
+            <div class="footer_icons">
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-square-facebook"></i>
+                <i class="fa-brands fa-youtube"></i>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="../scripts/home.js"></script>
+</html>
