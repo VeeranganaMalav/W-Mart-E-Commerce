@@ -1,0 +1,45 @@
+.container{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+#filter{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: fit-content;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 20px;
+}
+
+#filter-brand{
+    padding: 15px;
+    font-size: 18px;
+    margin: 15px 0px;
+}
+
+#filter-price{
+    padding: 15px;
+    font-size: 18px;
+    margin: 15px 0px;
+}
+
+#phone-container{
+    border: 1px solid red;
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    padding: 20px;
+}
+
+.phone-card{
+    width: 82%;
+    padding: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.phone-img{
+    width: 100%;
+}

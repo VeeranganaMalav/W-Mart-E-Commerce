@@ -1,6 +1,6 @@
 let userData = JSON.parse(localStorage.getItem("users")) || [];
 
-let form = document.querySelector("form");
+let form = document.querySelector("main form");
 
 form.addEventListener("submit", function(e){
     e.preventDefault();
@@ -8,7 +8,7 @@ form.addEventListener("submit", function(e){
     let passwordInput = document.getElementById("password").value;
     
     if(checkUser(userData, emailInput, passwordInput)){
-        alert("Signin succesfull")
+        window.location.href = "http://127.0.0.1:5500/pages/home.html";
     }
     else{
         alert("Wrong credentials")

@@ -90,10 +90,20 @@ function displayPhones(data){
 
     data.forEach((phone) => {
         let phoneCard = document.createElement("div");
+        phoneCard.setAttribute("class", "phone-card");
+
         let phoneImg = document.createElement("img");
+        phoneImg.setAttribute("class", "phone-img");
+
         let phoneName = document.createElement("h4");
+        phoneName.setAttribute("class", "phone-name");
+
         let phoneRam = document.createElement("p");
+        phoneRam.setAttribute("class", "phone-ram");
+
         let phonePrice = document.createElement("p");
+        phonePrice.setAttribute("class", "phone-price");
+
 
         phoneImg.src = phone.img;
         phoneName.innerText = phone.name,
