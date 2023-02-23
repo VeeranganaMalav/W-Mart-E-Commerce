@@ -1,5 +1,3 @@
-// let imagesData = JSON.parse(localStorage.getItem("image-loop")) || [];
-
 function imageSlideShow1(imgData){
     let imgEl = document.createElement("img");
     imgEl.setAttribute("className", "scroll-img");
@@ -93,7 +91,10 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
 }
 
-window.addEventListener("load", function(){
-    imageSlideShow1(imagesData1);
-    imageSlideShow2(imagesData2);
-})
+imageSlideShow1(imagesData1);
+imageSlideShow2(imagesData2);
+
+// window.addEventListener("load", function(){
+//     imageSlideShow1(imagesData1);
+//     imageSlideShow2(imagesData2);
+// })
