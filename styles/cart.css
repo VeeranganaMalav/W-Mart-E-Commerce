@@ -215,11 +215,135 @@ nav .nav_title{
     font-weight: 700;
 }
 
+
+
 #cart-container{
     margin-top: 230px;
     min-height: 40vh;
+    padding: 30px;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
+#products{
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    margin: auto;
+}
+
+.product-container{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: flex;
+    width: 92%;
+    flex-direction: column;
+    margin: 30px;
+    padding: 30px;
+}
+
+.product-info-div{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#product-div-1{
+    display: flex;
+    width: 25%;
+    flex-direction: column;
+}
+
+#product-div-1>img{
+    width: 100%;
+}
+
+.qty-div>button{
+    padding: 5px 12px;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0px 10px;
+}
+
+.qty-div>span{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.qty-div{
+    margin: auto;
+    padding: 20px;
+}
+
+#product-div-2{
+    width: 50%;
+}
+
+.button-div{
+    padding: 15px;
+    margin: auto;
+}
+
+.delete-btn{
+    font-size: 18px;
+    width: 150px;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #e42529;
+    color: white;
+    font-weight: 600;
+}
+
+#product-div-3{
+    width: 10%;
+}
+
+
+.chekout-btn{
+    padding: 10px;
+    border: none;
+    background-color: #e42529;
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.delivery-info{
+    font-weight: 700;
+    color: green;
+}
+
+.amount, .amount-info{
+    color: #003380;
+}
+
+.amount-el{
+    border-top: 1px solid rgb(196, 196, 196);
+    border-bottom: 1px solid rgb(196, 196, 196);
+}
+
+
+.cart-checkout-container{
+    display: flex;
+    width: 30%;
+    height: fit-content;
+    padding: 30px;
+    flex-direction: column;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.price-detail-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.price-el, .delivery-el, .amount-el{
+    display: flex;
+    justify-content: space-between;
+}
 
 
 #footer{
