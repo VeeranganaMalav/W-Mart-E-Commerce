@@ -47,12 +47,24 @@ function displayCart(data){
 
             let decrementBtn = document.createElement("button");
             decrementBtn.innerText = "-";
+            decrementBtn.addEventListener("click", function(){
+                if(cartData[index].quantity > 1){
+                  cartData[index].quantity -= 1;
+                  localStorage.setItem("cart", JSON.stringify(cartData));
+                  displayCart(cartData);
+                }
+            })
 
             let productQty = document.createElement("span");
             productQty.innerText = product.quantity;
             
             let incrementBtn = document.createElement("button");
             incrementBtn.innerText = "+";
+            incrementBtn.addEventListener("click", function(){
+                cartData[index].quantity += 1;
+                localStorage.setItem("cart", JSON.stringify(cartData));
+                displayCart(cartData);
+            })
 
             let qtyDiv = document.createElement("div");
             qtyDiv.setAttribute("class", "qty-div");

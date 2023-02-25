@@ -1,23 +1,28 @@
-let userData = JSON.parse(localStorage.getItem("users")) || [];
-
+let userInfo = JSON.parse(localStorage.getItem("users")) || [];
 let form = document.querySelector("main form");
 
 form.addEventListener("submit", function(e){
     e.preventDefault();
     let emailInput = document.getElementById("email").value;
     let passwordInput = document.getElementById("password").value;
-    
-    if(checkUser(userData, emailInput, passwordInput)){
-        window.location.href = "http://127.0.0.1:5500/pages/home.html";
-    }
-    else{
-        alert("Wrong credentials")
-    }
+
+    userInfo.forEach((userData) => {
+        if(checkUser(userData.user, emailInput, passwordInput)){
+            if(emailInput == "admin@ad.com"){
+                if(passwordInput == "admin"){
+                    window.location.href = "http://127.0.0.1:5500/pages/admin.html";
+                }
+            }
+            else{
+                window.location.href = "http://127.0.0.1:5500/pages/home.html";
+            }
+        }
+    })
 });
 
-function checkUser(userData, emailInput, passwordInput){
-    for(let i=0; i<userData.length; i++){
-        if((userData[i].email === emailInput) && (userData[i].password === passwordInput)){
+function checkUser(user, emailInput, passwordInput){
+    if(user.email == emailInput){
+        if(user.password == passwordInput){
             return true;
         }
     }

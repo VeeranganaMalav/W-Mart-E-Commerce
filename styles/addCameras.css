@@ -1,0 +1,38 @@
+body{
+    background-color: rgb(255, 252, 252);
+}
+
+#add-camera-form{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: auto;
+    margin-top: 5vh;
+    padding: 30px 50px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#add-camera-form>h2{
+    text-align: center;
+}
+
+#add-camera-form>label{
+    font-size: 18px;
+    padding: 5px;
+}
+
+#add-camera-form>input{
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+input[type="submit"]{
+    width: 50%;
+    margin: auto;
+    border: none;
+    font-weight: 600;
+    margin-top: 30px;
+    background-color: rgb(183, 219, 250);
+}
