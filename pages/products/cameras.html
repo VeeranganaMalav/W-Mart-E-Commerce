@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../styles/cameras.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../styles/login.css">
-    <title>Login to shop online</title>
+    <title>Cameras</title>
 </head>
 <body>
     <header class="topmost">
         <ul id="header_ul">
             <li class="header_li">
-                <a href="" class="header_anchor" target="_blank">Find a store</a>
+                <a href="./contactus.html" class="header_anchor" target="_blank">Find a store</a>
             </li>
             <li class="header_li">
                 <a href="./contactus.html" class="header_anchor" target="_blank">Contact us</a>
@@ -21,8 +21,8 @@
         </ul>
         <div id="header_section">
             <div id="header_main">
-                <a href="/" target="_self">
-                    <img src="../striped-substance-4459-logo-magnified.png" alt="logo_img">
+                <a href="../home.html" target="_self">
+                    <img src="../../striped-substance-4459-logo-magnified.png" alt="logo_img">
                 </a>
             </div>
             <div id="search_panel">
@@ -38,10 +38,24 @@
             <div id="header_section_ul">
                 <ul>
                     <li id="cart">
-                        <a href="./cart.html">
+                        <a href="../cart.html">
                             <i class="fa-solid fa-cart-shopping"></i>
                         </a>
                         <span class="cart_span">Cart</span>
+                    </li>
+                    <li id="account_dropdown">
+                        <span>
+                            <a href="../login.html" id="acc-page">
+                                <i class="fa-solid fa-user"></i>
+                            </a>
+                        </span>
+                        <span id="user_name"></span>
+                        <div id="acc_dropdown">
+                            <a href="/profile/myprofile" target="_self" class="acc_dropdown_item" id="profile">My Profile</a>
+                            <a href="/profile/address" target="_self" class="acc_dropdown_item" id="address">My Address</a>
+                            <a href="/profile/wishlist" target="_self" class="acc_dropdown_item" id="wishlist">My Wishlist</a>
+                            <div id="acc_logout">Logout</div>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -391,19 +405,38 @@
         </nav>
     </header>
 
-    <main id="login">
-        <div id="image-banner">
-            <img src="https://www.reliancedigital.in/akamai/images/mobile/Login-banner.jpeg" alt="">
+
+    <div class="container">
+        <div class="filter-container">
+            <div class="filter-text">
+                <p>FILTERS</p>
+            </div>
+            <div id="filter">
+                <select name="" id="filter-brand">
+                    <option value="">Select brand</option>
+                    <option value="Nikon">Nikon</option>
+                    <option value="Canon">Canon</option>
+                </select>
+                <select name="" id="filter-price">
+                    <option value="">Select price</option>
+                    <option value="50000">Below 50000</option>
+                    <option value="150000">Below 150000</option>
+                    <option value="300000">Below 300000</option>
+                </select>
+                <select name="" id="filter-lens">
+                    <option value="">Select Lens</option>
+                    <option value="18-55 mm">18-55 mm</option>
+                    <option value="24-120 mm">24-120 mm</option>
+                    <option value="18-135 mm">18-135 mm</option>
+                    <option value="18-140mm">18-140mm</option>
+                </select>
+            </div>
         </div>
-        <div id="login-card">
-            <p>LOGIN</p>
-            <form>
-                <input type="email" id="email" placeholder="email">
-                <input type="password" id="password" placeholder="password">
-                <input type="submit" value="LOGIN">
-            </form>
+        <div id="camera-container">
+    
         </div>
-    </main>
+    </div>
+
 
     <footer id="footer">
         <div class="footer_links">
@@ -463,5 +496,5 @@
         </div>
     </footer>
 </body>
-<script src="../scripts/login.js"></script>
+<script src="../../scripts/cameras.js"></script>
 </html>
