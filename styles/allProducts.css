@@ -215,25 +215,18 @@ nav .nav_title{
     font-weight: 700;
 }
 
-
 .container{
     margin-top: 250px;
+    min-height: 40vh;
     display: flex;
     width: 100%;
     justify-content: space-evenly;
 }
 
-.filter-sort{
-    display: flex;
-    flex-direction: column;
-    width: 20%;
-    height: fit-content;
-}
-
 .filter-container{
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 20%;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     height: fit-content;
     padding: 20px;
@@ -259,6 +252,13 @@ nav .nav_title{
     margin: 15px 0px;
 }
 
+#filter-ram{
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    margin: 15px 0px;
+}
+
 #filter-lens{
     width: 100%;
     padding: 15px;
@@ -266,30 +266,8 @@ nav .nav_title{
     margin: 15px 0px;
 }
 
-.sort-container{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    height: fit-content;
-    padding: 20px;
-    margin-top: 25px;
-}
 
-.sort-text{
-    font-size: 24px;
-    font-weight: 700;
-    padding: 0px 10px;
-}
-
-#sort-price{
-    width: 100%;
-    padding: 15px;
-    font-size: 18px;
-    margin: 15px 0px;
-}
-
-#camera-container{
+#product-container{
     width: 70%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -298,17 +276,17 @@ nav .nav_title{
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-.camera-card{
+.product-card{
     width: 95%;
     padding: 20px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-.camera-img{
+.product-img{
     width: 100%;
 }
 
-.add-cart-btn{
+.add-to-cart-btn{
     border: none;
     border-radius: 7px;
     background-color: #303F9F;

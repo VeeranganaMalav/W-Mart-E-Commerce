@@ -1,14 +1,13 @@
-let nameInput = document.getElementById("name");
-let emailInput = document.getElementById("email");
-let passwordInput = document.getElementById("password");
-
-let form = document.querySelector("main form");
-
 let userInfo = JSON.parse(localStorage.getItem("users")) || [];
+let form = document.getElementById("register-form");
 
 form.addEventListener("submit", function(e){
-    window.location.href = "http://127.0.0.1:5500/pages/home.html";
     e.preventDefault();
+    let nameInput = document.getElementById("name");
+    let emailInput = document.getElementById("email");
+    let passwordInput = document.getElementById("password");
+
+    window.location.href = "http://127.0.0.1:5500/pages/home.html";
     let userObj = {
         name : nameInput.value,
         email : emailInput.value,

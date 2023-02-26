@@ -130,7 +130,6 @@ body{
     right: 0;
     background-color: #f9f9f9;
     min-width: 180px;
-    margin: 10px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
@@ -343,6 +342,7 @@ nav .nav_title{
 }
 
 .explore-btn{
+    display: block;
     width: 20%;
     margin: auto;
     border: none;

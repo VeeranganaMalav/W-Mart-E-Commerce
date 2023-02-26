@@ -223,10 +223,17 @@ nav .nav_title{
     justify-content: space-evenly;
 }
 
-.filter-container{
+.filter-sort{
     display: flex;
     flex-direction: column;
     width: 20%;
+    height: fit-content;
+}
+
+.filter-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     height: fit-content;
     padding: 20px;
@@ -237,15 +244,6 @@ nav .nav_title{
     font-weight: 700;
     padding: 0px 10px;
 }
-
-/* #filter{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: fit-content;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    padding: 20px;
-} */
 
 #filter-brand{
     width: 100%;
@@ -262,6 +260,29 @@ nav .nav_title{
 }
 
 #filter-ram{
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    margin: 15px 0px;
+}
+
+.sort-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    height: fit-content;
+    padding: 20px;
+    margin-top: 25px;
+}
+
+.sort-text{
+    font-size: 24px;
+    font-weight: 700;
+    padding: 0px 10px;
+}
+
+#sort-price{
     width: 100%;
     padding: 15px;
     font-size: 18px;
