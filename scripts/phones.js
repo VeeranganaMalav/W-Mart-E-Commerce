@@ -101,3 +101,24 @@ filterRam.addEventListener("change", function(){
         displayPhones(filteredRAM);
     }
 })
+
+let sortByPrice = document.getElementById("sort-price");
+sortByPrice.addEventListener("change", function(){
+    if(sortByPrice.value === ""){
+        displayPhones(phonesData);
+    }
+    else{
+        let sortedPrices = phonesData.sort(function(element1, element2){
+                                let price1 = element1.price;
+                                let price2 = element2.price;
+                                if(sortByPrice.value === "Low To High"){
+                                    return price1 - price2;
+                                }
+                                else if(sortByPrice.value === "High To Low"){
+                                    return price2 - price1;
+                                }
+                            })
+  
+        displayPhones(sortedPrices);
+    }
+})

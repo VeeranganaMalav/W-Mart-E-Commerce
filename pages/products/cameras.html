@@ -407,29 +407,43 @@
 
 
     <div class="container">
-        <div class="filter-container">
-            <div class="filter-text">
-                <p>FILTERS</p>
+        <div class="filter-sort">
+            <div class="filter-container">
+                <div class="filter-text">
+                    <p>FILTERS</p>
+                </div>
+                <div id="filter">
+                    <select name="" id="filter-brand">
+                        <option value="">Select brand</option>
+                        <option value="Nikon">Nikon</option>
+                        <option value="Canon">Canon</option>
+                    </select>
+                    <select name="" id="filter-price">
+                        <option value="">Select price</option>
+                        <option value="50000">Below 50000</option>
+                        <option value="150000">Below 150000</option>
+                        <option value="300000">Below 300000</option>
+                    </select>
+                    <select name="" id="filter-lens">
+                        <option value="">Select Lens</option>
+                        <option value="18-55 mm">18-55 mm</option>
+                        <option value="24-120 mm">24-120 mm</option>
+                        <option value="18-135 mm">18-135 mm</option>
+                        <option value="18-140mm">18-140mm</option>
+                    </select>
+                </div>
             </div>
-            <div id="filter">
-                <select name="" id="filter-brand">
-                    <option value="">Select brand</option>
-                    <option value="Nikon">Nikon</option>
-                    <option value="Canon">Canon</option>
-                </select>
-                <select name="" id="filter-price">
-                    <option value="">Select price</option>
-                    <option value="50000">Below 50000</option>
-                    <option value="150000">Below 150000</option>
-                    <option value="300000">Below 300000</option>
-                </select>
-                <select name="" id="filter-lens">
-                    <option value="">Select Lens</option>
-                    <option value="18-55 mm">18-55 mm</option>
-                    <option value="24-120 mm">24-120 mm</option>
-                    <option value="18-135 mm">18-135 mm</option>
-                    <option value="18-140mm">18-140mm</option>
-                </select>
+            <div class="sort-container">
+                <div class="sort-text">
+                    <p>SORT</p>
+                </div>
+                <div id="sort">
+                    <select name="" id="sort-price">
+                        <option value="">Sort By Price</option>
+                        <option value="Low To High">Low To High</option>
+                        <option value="High To Low">High To Low</option>
+                    </select>
+                </div>
             </div>
         </div>
         <div id="camera-container">

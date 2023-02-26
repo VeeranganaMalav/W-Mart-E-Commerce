@@ -23,7 +23,7 @@ function displayProducts(data){
         removeButton.setAttribute("class", "remove-btn");
 
         removeButton.addEventListener("click", function(){
-            data.splice(index, i);
+            data.splice(index, 1);
             localStorage.setItem("products-storage", JSON.stringify(data));
             displayProducts(productsArray);
         })

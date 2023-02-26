@@ -101,3 +101,24 @@ filterLens.addEventListener("change", function(){
         displayCameras(filteredLens);
     }
 })
+
+let sortByPrice = document.getElementById("sort-price");
+sortByPrice.addEventListener("change", function(){
+    if(sortByPrice.value === ""){
+        displayCameras(camerasData);
+    }
+    else{
+        let sortedPrices = camerasData.sort(function(element1, element2){
+                                let price1 = element1.price;
+                                let price2 = element2.price;
+                                if(sortByPrice.value === "Low To High"){
+                                    return price1 - price2;
+                                }
+                                else if(sortByPrice.value === "High To Low"){
+                                    return price2 - price1;
+                                }
+                            })
+  
+        displayCameras(sortedPrices);
+    }
+})

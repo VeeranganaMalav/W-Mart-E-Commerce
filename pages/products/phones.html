@@ -407,30 +407,44 @@
 
 
     <div class="container">
-        <div class="filter-container">
-            <div class="filter-text">
-                <p>FILTERS</p>
+        <div class="filter-sort">
+            <div class="filter-container">
+                <div class="filter-text">
+                    <p>FILTERS</p>
+                </div>
+                <div id="filter">
+                    <select name="" id="filter-brand">
+                        <option value="">Select brand</option>
+                        <option value="Samsung">Samsung</option>
+                        <option value="Realme">Realme</option>
+                        <option value="Oppo">Oppo</option>
+                        <option value="Vivo">Vivo</option>
+                    </select>
+                    <select name="" id="filter-price">
+                        <option value="">Select price</option>
+                        <option value="10000">Below 10000</option>
+                        <option value="20000">Below 20000</option>
+                        <option value="30000">Below 30000</option>
+                    </select>
+                    <select name="" id="filter-ram">
+                        <option value="">Select RAM</option>
+                        <option value="4 GB">4 GB</option>
+                        <option value="6 GB">6 GB</option>
+                        <option value="8 GB">8 GB</option>
+                    </select>
+                </div>
             </div>
-            <div id="filter">
-                <select name="" id="filter-brand">
-                    <option value="">Select brand</option>
-                    <option value="Samsung">Samsung</option>
-                    <option value="Realme">Realme</option>
-                    <option value="Oppo">Oppo</option>
-                    <option value="Vivo">Vivo</option>
-                </select>
-                <select name="" id="filter-price">
-                    <option value="">Select price</option>
-                    <option value="10000">Below 10000</option>
-                    <option value="20000">Below 20000</option>
-                    <option value="30000">Below 30000</option>
-                </select>
-                <select name="" id="filter-ram">
-                    <option value="">Select RAM</option>
-                    <option value="4 GB">4 GB</option>
-                    <option value="6 GB">6 GB</option>
-                    <option value="8 GB">8 GB</option>
-                </select>
+            <div class="sort-container">
+                <div class="sort-text">
+                    <p>SORT</p>
+                </div>
+                <div id="sort">
+                    <select name="" id="sort-price">
+                        <option value="">Sort By Price</option>
+                        <option value="Low To High">Low To High</option>
+                        <option value="High To Low">High To Low</option>
+                    </select>
+                </div>
             </div>
         </div>
         <div id="phone-container">
